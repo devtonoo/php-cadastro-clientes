@@ -1,0 +1,19 @@
+<?php
+
+include("config.php");
+
+$consulta =  "SELECT * FROM clienteTabela";
+$con = $mysqli->query($consulta) or die($mysqli->error);
+?><html>
+<head>
+  <!--//o comando meta com as configurações abaixao serve para permitir assento nas palavars-->
+  <meta http-equiv="Content-Type" content="text/html, charset=utf-8 ">
+  <title>CADASTRO CLIENTES</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class=principal>
+
+  </div>
+</body>
+</html>

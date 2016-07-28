@@ -1,0 +1,33 @@
+<h1>Usuarios</h1>
+<a href="index.php?p=cadastrar">Cadastrar usuário</a>
+<table border=1 cellpadding=10>
+	<tr class=titulo>
+		<td>Nome</td>
+		<td>Email</td>
+		<td>Telefone</td>
+		<td>Endereco</td>
+		<td>Numero</td>
+		<td>Bairro</td>
+		<td>Cep</td>
+		<td>Ativo</td>
+		<td>Ação</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>
+			<a href="index.php?p=editar&clienteTabela=">Editar</a>
+			<a href="index.php?p=deletar&clienteTabela=">Deletar</a>
+		</td>
+	</tr>
+
+</table>
+
+
+

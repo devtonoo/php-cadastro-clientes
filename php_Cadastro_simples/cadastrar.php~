@@ -1,0 +1,68 @@
+<?php
+
+  include("config.php");
+  //if(isset($_POST["confirmar"]){
+    //registro
+    if(true){
+      echo ("entrou na condicao do confirmar");
+    }
+    //validacao
+    //inserer no banco e redirecionar
+  }
+
+?>
+
+<h1>Cadastrar usuario</h1>
+<a href="index.php?p=inicial">Voltar</a>
+<p class=espaco></p>
+<form method="POST" action="index.php?p-cadastrar">
+  <table id="cad_table">
+    <tr> 	
+      <p>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" class="txt" />
+      <p>
+        <label for="emil">Email</label>
+        <input type="text" name="email" id="email" class="txt" />
+      <p>
+        <label for="telefone">Telefone</label>
+        <input type="text" name="telefone" id="telefone" class="txt" maxlength="15" />
+      <p>
+        <label for="endereco">Endereco</label>
+        <input type="text" name="endereco" id="endereco" class="txt" maxlength="15" />
+      <p>
+        <label for="numero">Numero</label>
+        <input type="text" name="numero" id="numero" class="txt" maxlength="15" />
+      <p>
+        <label for="Bairro">Bairro</label>
+        <input type="text" name="bairro" id="bairro" class="txt" maxlength="15" />
+      <p>
+        <label for="cep">CEP</label>
+        <input type="text" name="cep" id="cep" class="txt" maxlength="15" />
+      <p>
+        <label for="ativo">Ativo</label>
+        <select name="ativo">
+        <option value="1">Sim</option>
+        <option value="2">Não</option>
+      </select>
+      <p>
+    </tr>
+     <tr>
+        <td colspan="2"><input type="submit" value="Cadastrar" name="confirmar" id="botaoCadastrar"></td>
+      </tr>
+    <?php while($dado = $con->fetch_array()){ ?>
+      <tr>
+        <td><?php echo $dado["nome"];?></td>
+        <td><?php echo $dado["email"];?></td>
+        <td><?php echo $dado["telefone"];?></td>
+        <td><?php echo $dado["endereco"];?></td>
+        <td><?php echo $dado["numero"];?></td>
+        <td><?php echo $dado["bairro"];?></td>
+        <td><?php echo $dado["cep"];?></td>
+        <td><?php echo $dado["ativo"];?></td>
+      </tr>
+    <?php } ?>
+     
+
+  </table>
+</form>
